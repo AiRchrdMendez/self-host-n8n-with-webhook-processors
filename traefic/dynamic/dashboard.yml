@@ -1,1 +1,17 @@
-#Need contents here
+# dashboard.yml - Traefik dashboard configuration
+http:
+  middlewares:
+    traefik-auth:
+      basicAuth:
+        users:
+          - "admin:$apr1$rGZeGopw$3/zWZoMVDt/Y6iRuRoMoN1"  # Default password: admin123
+          # This is a hashed password - you should generate your own with htpasswd
+
+  routers:
+    dashboard:
+      rule: "Host(`traefik.example.com`)"
+      service: "api@internal"
+      middlewares:
+        - traefik-auth
+      tls:
+        certResolver: letsencrypt
