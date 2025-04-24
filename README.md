@@ -14,7 +14,7 @@ The deployment consists of five main components:
 4. **PostgreSQL**: Database for storing workflows and execution data
 5. **Redis**: Message broker for communication between components
 
-![Architecture Diagram]([https://github.com/AiRchrdMendez/self-host-n8n-with-webhook-processors/blob/main/README.md))
+![Architecture Diagram]([https://github.com/AiRchrdMendez/self-host-n8n-with-webhook-processors/blob/main/docs/images/n8n-architecture.png))
 
 ## ✨ Features
 
