@@ -33,7 +33,7 @@ Perfect for deploying directly on a VPS with Docker installed.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/AiRchrdMendez/n8n-self-hosted.git
+   git clone https://github.com/AiRchrdMendez/self-host-n8n-with-webhook-processors.git
    cd n8n-self-hosted
    ```
 
